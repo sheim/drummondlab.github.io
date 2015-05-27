@@ -78,9 +78,7 @@ categories:
 		<div class="bigspacer"></div>
 		<div class="feedbox pad-left">
 			<!-- news -->
-
-			{% assign nodes = site.categories.news | where:"lang",page.lang %}
-			{% for news in nodes limit:4 %}
+			{% for news in site.categories.news limit:4 %}
 			
 				{% for member in site.categories.team %}
 					{% if member.handle == news.author_handle %}
@@ -153,10 +151,8 @@ categories:
 			</a>
 		</div>
 		<div class="bigspacer"></div>
-		<div class="feedbox pad-left">
-
-			{% assign nodes = site.categories.papers | where:"lang",page.lang %}		
-			{% for paper in nodes limit:4 %}
+		<div class="feedbox pad-left">		
+			{% for paper in site.categories.papers limit:4 %}
 				<div class="note-title">
 					<i class="fa fa-file-text-o fa-fw"></i>
 					<a class="off" href="{{ paper.url }}">

@@ -1,0 +1,29 @@
+---
+layout: paper
+title: "On the embodiment that enables passive dynamic bipedal running"
+year: "2008"
+shortref: "Owaki et al. ICRA 2005"
+nickname: passive-dynamic-running
+journal: "Robotics and Automation, 2008. ICRA 2008. IEEE International Conference on"
+pages: 341--346
+authors: "Owaki, Dai and Osuka, Koichi and Ishiguro, Akio"
+image: /assets/images/papers/default-paper.svg
+pdf: 
+pdflink:
+github: 
+pmid:
+pmcid:
+f1000:
+figshare: 
+doi:
+category: paper
+published: true
+peerreview: true
+review: false
+tags: [stability, legged-locomotion, passive dynamics]
+---
+{% include JB/setup %}
+
+# Abstract 
+
+The control and mechanical systems of an embodied agent should be tightly coupled so as to emerge useful functionalities such as adaptivity. This indicates that the mechanical system as well as the control system should be responsible for a certain amount of "computation" for generating the behavior. However, there still leaves much to be understood about to what extent "computational offloading" from the control system to the mechanical system should be achieved. In order to effectively consider this, here we particularly focus on a passive dynamic running biped whose behavior is generated purely from its mechanical system, and investigate how the body's properties influence the resulting behavior. Through the numerical simulations, we have found that two elastic parameters of its body, leg spring constant and hip coil spring constant, play a crucial role, and depending on which various kinds of stable gait patterns are generated. To the best of our knowledge, this has not been explicitly addressed so far. The results obtained are expected to shed a new light on to what extent the mechanical system should be responsible for generating the behavior.
