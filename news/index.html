@@ -30,7 +30,8 @@ navorder: 6
     
 </div>
 
-{% for post in site.categories.news %}
+{% assign nodes = site.categories.news | where:"lang" , page.lang %}
+{% for post in nodes %}
 
 	{% for member in site.categories.team %}
 		{% if member.handle == post.author_handle %}

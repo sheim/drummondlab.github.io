@@ -12,8 +12,7 @@ image: /assets/images/team/steveHeim.jpg
 cv:
 alum: false
 ---
-
-In a broad sense, I'm interested in how nature solves optimality problems. My focus is on how to design morphologies (i.e. mechanics) such that the natural dynamics can be easily exploited via control.
+日本語のディスクリプション。
 
 {% comment %}
 Dr. Drummond is an Assistant Professor at the [University of Chicago] in the Department of [Biochemistry & Molecular Biology], with a secondary appointment in the [Department of Human Genetics].

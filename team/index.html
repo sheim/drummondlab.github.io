@@ -8,7 +8,8 @@ navorder: 2
 {% include JB/setup %}
 
 <div class="bigspacer"></div>
-{% for member in site.categories.team reversed %}
+{% assign nodes = site.categories.team | where:"lang" , page.lang %}
+{% for member in nodes reversed %}
 	{% if member.alum == false %}
 	    {% cycle 'add rows': '<div class="row">', nil, nil %}
 			<div class="col-md-4 memberbox">
@@ -32,7 +33,8 @@ navorder: 2
 <div class="bigtitle text-center">Alumni</div>
 <div class="bigspacer"></div>
 
-{% for member in site.categories.team reversed %}
+{% assign nodes = site.categories.team | where:"lang" , page.lang %}
+{% for member in nodes reversed %}
 	{% if member.alum == true %}
 	    {% cycle 'add rows': '<div class="row">', nil, nil %}
 			<div class="col-md-4 memberbox">

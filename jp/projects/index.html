@@ -12,7 +12,8 @@ navorder: 1
   We are working on this page. Stay tuned.
   <hr/>
 </div>
-{% for project in site.categories.projects %}
+{% assign nodes = site.categories.projects | where:"lang" , page.lang %}
+{% for project in nodes %}
 <div class='row'>
   <!--
   <div class='row'>
