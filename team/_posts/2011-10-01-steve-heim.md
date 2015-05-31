@@ -1,10 +1,10 @@
 ---
 layout: member
-title: "Steve W. Heim"
+title: "Steve W. Heim" # this is the title
 position: Visiting Research Student
 nickname: Steve
-handle: steveheim
-email: heim.steve@gmail.com
+handle: steveheim 
+email: heim.steve@gmail.com # This is the email
 twitter:
 github: sheim
 scholar:
@@ -13,17 +13,14 @@ cv:
 alum: false
 ---
 
-In a broad sense, I'm interested in how nature solves optimality problems. My focus is on how to design morphologies (i.e. mechanics) such that the natural dynamics can be easily exploited via control.
+## Research Statement
+In a broad sense, I'm interested in how nature solves optimality problems, in particular with regard to dynamics and locomotion.  
+Human-engineered machines tend to systematically outperform nature's solutions only for a small set of cases, namely when the dynamics can be accurately captured by a linear model. Otherwise, animals tend to move more gracefully, efficiently and robustly in spite of, or perhaps _because of_, rather complex non-linear dynamics involved.
 
-{% comment %}
-Dr. Drummond is an Assistant Professor at the [University of Chicago] in the Department of [Biochemistry & Molecular Biology], with a secondary appointment in the [Department of Human Genetics].
+I believe this performance is achieved by properly exploiting rather than overcoming the non-linear dynamics. To this end, it is important to both design a controller that properly exploits the _natural dynamics_, as well as design the mechanical system such that it's dynamics are easily exploitable.
 
-Allan started the group at [Harvard University](http://harvard.edu) as a [Bauer Fellow](http://sysbio.harvard.edu/fellows-0) at the [FAS Center for Systems Biology](http://sysbio.harvard.edu/home), where he spent five years. He received his Ph.D. in [Computation and Neural Systems][CNS] from [Caltech](http://www.caltech.edu).
+## Short Biography
+ I completed my BSc degree in Mechanical Engineering and my MSc in Robotics, Systems and Control at ETH Zurich. During this time I spent a semester at TU Delft and conducted my master thesis at the [BioRob lab][http://biorob.epfl.ch/] of prof. [Auke Ijspeert](http://biorob.epfl.ch/people/ijspeert) at EPFL.
 
-Prior to entering science, Allan worked at [Trilogy](http://www.trilogy.com) for seven years in multiple roles, the last as an HR director responsible for training and leadership development as director of Trilogy University.
-
-[University of Chicago]: http://www.uchicago.edu
-[Biochemistry & Molecular Biology]: http://bmb.uchospitals.edu
-[Department of Human Genetics]: http://genes.uchicago.edu
-[CNS]: http://www.cns.caltech.edu/
-{% endcomment %}
+## Other Interests
+I enjoy photography, music (mostly fingerstyle acoustic guitar) and playing [go](http://senseis.xmp.net/?WhatIsGo) (囲碁).

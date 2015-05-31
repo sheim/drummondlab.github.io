@@ -86,15 +86,17 @@
           {% endif %}
         </ul>
         <ul class="nav navbar-nav navbar-right pull-right">
-          {% assign pages_list = (site.pages | sort: 'navorder') | where:"lang","en"%}
+          {% assign pages_list = (site.pages | sort: 'navorder') | where:"lang",page.lang%}
           {% assign group = 'navigation' %}
           {% include JB/pages_list %}
 
 
-          {% comment %} *************************************************************************************
-
-            ************************************************************************************ {% endcomment %}
-
+          <!-- For now, just simple link back to homepage of other language -->
+          {% if page.lang == "en" %}
+            <a class="navbar-brand" href="{{HOME_PATH}}jp/"> <b> jp </b></a>
+          {% elsif page.lang == "jp" %}
+            <a class="navbar-brand" href="{{HOME_PATH}}"> <b>en</b> </a>
+          {% endif %}
 
           {% comment %} *************************************************************************************
           *************************** This is a drop-down menu on the far right, not used atm  **************

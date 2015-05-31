@@ -91,7 +91,9 @@
 		</div>
 		
 		{% assign lastname = member.title | split: ' ' | last %}
-		{% for paper in site.categories.papers %}
+
+		{% assign nodes = site.categories.papers |where:"lang", page.lang %}
+		{% for paper in nodes %}
 			{% if paper.authors contains lastname %}
 				{% assign papersq = true %}
 			{% endif %}
@@ -101,14 +103,16 @@
 			<div class="bigspacer"></div>
 			<div class="head">Papers</div>
 			<div class="spacer"></div>
-			{% for paper in site.categories.papers %}
+			{% assign nodes = site.categories.papers |where:"lang", page.lang %}
+			{% for paper in nodes %}
 				{% if paper.authors contains lastname %}
 					<p><a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
 				{% endif %}
 			{% endfor %}
 		{% endif %}		
 		
-		{% for post in site.categories.blog %}
+		{% assign nodes = site.categories.blog | where:"lang", page.lang %}
+		{% for post in nodes %}
 			{% if member.handle == post.author_handle %}
 				{% assign postsq = true %}
 			{% endif %}
@@ -118,7 +122,8 @@
 			<div class="bigspacer"></div>
 			<div class="head">Posts</div>
 			<div class="spacer"></div>
-			{% for post in site.categories.blog %}
+		{% assign nodes = site.categories.blog | where:"lang", page.lang %}
+		{% for post in nodes %}
 				{% if member.handle == post.author_handle %}
 					<p><a href="{{ post.url }}" class="off">{{ post.title }}</a>
 				{% endif %}
